@@ -1,0 +1,83 @@
+2021-11-01 14:33:20,202 - Model - INFO - PARAMETER ...
+2021-11-01 14:33:20,202 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:33:25,573 - Model - INFO - The number of training data is: 46
+2021-11-01 14:33:25,573 - Model - INFO - The number of test data is: 17
+2021-11-01 14:33:25,576 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 14:34:11,769 - Model - INFO - PARAMETER ...
+2021-11-01 14:34:11,769 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:34:18,525 - Model - INFO - The number of training data is: 46
+2021-11-01 14:34:18,525 - Model - INFO - The number of test data is: 17
+2021-11-01 14:34:18,525 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 14:35:18,455 - Model - INFO - PARAMETER ...
+2021-11-01 14:35:18,455 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:35:25,055 - Model - INFO - The number of training data is: 46
+2021-11-01 14:35:25,055 - Model - INFO - The number of test data is: 17
+2021-11-01 14:35:25,055 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 14:39:38,876 - Model - INFO - PARAMETER ...
+2021-11-01 14:39:38,876 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:39:45,507 - Model - INFO - The number of training data is: 46
+2021-11-01 14:39:45,507 - Model - INFO - The number of test data is: 17
+2021-11-01 14:39:45,510 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 14:47:16,903 - Model - INFO - PARAMETER ...
+2021-11-01 14:47:16,903 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:47:23,551 - Model - INFO - The number of training data is: 46
+2021-11-01 14:47:23,551 - Model - INFO - The number of test data is: 17
+2021-11-01 14:47:23,551 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 14:49:47,614 - Model - INFO - PARAMETER ...
+2021-11-01 14:49:47,614 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:49:54,192 - Model - INFO - The number of training data is: 46
+2021-11-01 14:49:54,192 - Model - INFO - The number of test data is: 17
+2021-11-01 14:49:54,202 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 14:54:52,200 - Model - INFO - PARAMETER ...
+2021-11-01 14:54:52,200 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 14:54:57,332 - Model - INFO - The number of training data is: 46
+2021-11-01 14:54:57,332 - Model - INFO - The number of test data is: 17
+2021-11-01 14:54:57,332 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:11:55,216 - Model - INFO - PARAMETER ...
+2021-11-01 15:11:55,216 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:12:00,652 - Model - INFO - The number of training data is: 46
+2021-11-01 15:12:00,652 - Model - INFO - The number of test data is: 17
+2021-11-01 15:12:00,652 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:13:01,799 - Model - INFO - PARAMETER ...
+2021-11-01 15:13:01,799 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:13:07,049 - Model - INFO - The number of training data is: 46
+2021-11-01 15:13:07,049 - Model - INFO - The number of test data is: 17
+2021-11-01 15:13:07,049 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:14:15,951 - Model - INFO - PARAMETER ...
+2021-11-01 15:14:15,951 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:14:21,369 - Model - INFO - The number of training data is: 46
+2021-11-01 15:14:21,369 - Model - INFO - The number of test data is: 17
+2021-11-01 15:14:21,369 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:15:25,876 - Model - INFO - PARAMETER ...
+2021-11-01 15:15:25,876 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:15:31,303 - Model - INFO - The number of training data is: 46
+2021-11-01 15:15:31,303 - Model - INFO - The number of test data is: 17
+2021-11-01 15:15:31,303 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:16:22,633 - Model - INFO - PARAMETER ...
+2021-11-01 15:16:22,633 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:16:28,239 - Model - INFO - The number of training data is: 46
+2021-11-01 15:16:28,239 - Model - INFO - The number of test data is: 17
+2021-11-01 15:16:28,239 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:17:56,198 - Model - INFO - PARAMETER ...
+2021-11-01 15:17:56,198 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:18:01,520 - Model - INFO - The number of training data is: 46
+2021-11-01 15:18:01,520 - Model - INFO - The number of test data is: 17
+2021-11-01 15:18:01,520 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:19:04,666 - Model - INFO - PARAMETER ...
+2021-11-01 15:19:04,666 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:19:10,489 - Model - INFO - The number of training data is: 46
+2021-11-01 15:19:10,489 - Model - INFO - The number of test data is: 17
+2021-11-01 15:19:10,489 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:20:49,003 - Model - INFO - Training mean loss: 0.689251
+2021-11-01 15:21:16,150 - Model - INFO - epoch: 2,val_miou: 31.767937
+2021-11-01 15:29:57,765 - Model - INFO - PARAMETER ...
+2021-11-01 15:29:57,765 - Model - INFO - Namespace(check_iter=1, data_dir='data/nuscenes_moving_obstacle_detection', grid_size=[480, 480, 32], log_dir='runs/', max_epoch=10, model_save_path='./SemKITTI_PolarSeg.pt', train_batch_size=1, val_batch_size=1)
+2021-11-01 15:30:03,176 - Model - INFO - The number of training data is: 46
+2021-11-01 15:30:03,176 - Model - INFO - The number of test data is: 17
+2021-11-01 15:30:03,178 - Model - INFO - **** Epoch 1 (1/10) ****
+2021-11-01 15:31:40,505 - Model - INFO - Training mean loss: 0.552077
+2021-11-01 15:32:08,363 - Model - INFO - epoch: 2,val_miou: 27.374578
+2021-11-01 15:32:10,704 - Model - INFO - Save model...
+2021-11-01 15:32:10,704 - Model - INFO - Best mIoU: 27.374578
+2021-11-01 15:32:10,704 - Model - INFO -  (np.mean(val_loss)): 1.643585
+2021-11-01 15:32:10,704 - Model - INFO - **** Epoch 47 (2/10) ****
