@@ -39,12 +39,12 @@ def SemKITTI2train_single(label):
 def parse_args():
     parser = argparse.ArgumentParser(description = 'PolarNuscenes')
     parser.add_argument('-d', '--data_dir', default = 'data/nuscenes_moving_obstacle_detection')
-    parser.add_argument('-p', '--model_save_path', default = './SemKITTI_PolarSeg.pt')
+    parser.add_argument('-p', '--model_save_path', default = './Polarmeng.pt')
     parser.add_argument('-s', '--grid_size', nargs = '+', type = int, default = [480, 480, 32])
-    parser.add_argument('--train_batch_size', type = int, default = 1, help = 'batch size for training (default: 2)')
-    parser.add_argument('--val_batch_size', type = int, default = 1, help = 'batch size for validation (default: 2)')
-    parser.add_argument('--check_iter', type = int, default = 1)
-    parser.add_argument('--max_epoch', type = int, default = 10)
+    parser.add_argument('--train_batch_size', type = int, default = 2, help = 'batch size for training (default: 2)')
+    parser.add_argument('--val_batch_size', type = int, default = 2, help = 'batch size for validation (default: 2)')
+    parser.add_argument('--check_iter', type = int, default = 2)
+    parser.add_argument('--max_epoch', type = int, default = 50)
     parser.add_argument('--log_dir', type = str, default = "runs/", help = 'Log path [default: None]')
     return parser.parse_args()
 
