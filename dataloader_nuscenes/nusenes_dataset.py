@@ -2,15 +2,12 @@ from torch.utils.data import Dataset
 from pathlib import Path
 import torch
 import os
-import time
 import random
 from torch.utils.data import Dataset
 import numpy as np
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
-# from data_utils import farthest_point_sample,index_points
-import provider
-from provider import normalize_data, shuffle_data, rotate_point_cloud
+
 
 # 获得scene_name:
 from tqdm import tqdm

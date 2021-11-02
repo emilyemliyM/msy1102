@@ -1,11 +1,5 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import numpy as np
-import multiprocessing
-# pointnet encode
-import torch_scatter
-from dropblock import DropBlock2D
 from functools import partial
 from network.mynetwork import PPmodel_all_preprocess, Template_class, BEV_Unet_encoder, conv_circular, up,outconv
 # from network.pvt_msy_v1 import PyramidVisionTransformer
@@ -40,7 +34,7 @@ class PolarSegFormer(nn.Module):
 
         # self.ppmodel = PPmodel(fea_dim, out_pt_fea_dim)
         self.ppmodel = PPmodel_all_preprocess(grid_size = [480, 480, 32], max_pt_per_encode = 256, kernal_size = 1,
-                                              fea_compre = 64)
+                                              fea_compre = 32)
         # self.pyramidformer = PyramidVisionTransformerV2(patch_size = 4, embed_dims = [128, 320], num_heads = [2, 5],
         #                                                 mlp_ratios = [8, 4], qkv_bias = True,
         #                                                 norm_layer = partial(nn.LayerNorm, eps = 1e-5), depths = [2, 2],
@@ -53,7 +47,7 @@ class PolarSegFormer(nn.Module):
         self.up1= up( 640, 256,circular_padding = True)  # in + x2.channel 512+128
         self.up2= up( 512, 256,scale_factor =  4)  # 恢复至transformer的输入尺寸
         # self.up3= up( 256, 128,scale_factor =  2)  # 恢复至1/2的输入尺寸
-        self.up3= up( 320, 64,scale_factor =  4)  # 恢复至raw的输入尺寸  32+256
+        self.up3= up( 288, 64,scale_factor =  4)  # 恢复至raw的输入尺寸  32+256
         self.dropout = nn.Dropout(p = 0. )
 
          # 因为所以合计降低维度一下，就64吧

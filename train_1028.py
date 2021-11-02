@@ -1,10 +1,8 @@
 import gc
-
 import torch
 import os
 import random
 import argparse
-from pathlib import Path
 from torch.utils.data import random_split
 import numpy as np
 import torch.optim as optim
@@ -152,11 +150,11 @@ def main():
     """#  test和 val的 collate_fn_BEV 需要换，还没写，哈哈哈哈。。。 不要忘了！！"""
     test_dataset_loader = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = train_batch_size,
                                                       collate_fn = collate_fn_BEV,
-                                                      shuffle = True, num_workers = 0)
+                                                      shuffle = False, num_workers = 0)
 
     val_dataset_loader = torch.utils.data.DataLoader(dataset = val_dataset, batch_size = train_batch_size,
                                                      collate_fn = collate_fn_BEV,
-                                                     shuffle = True, num_workers = 0)
+                                                     shuffle = False, num_workers = 0)
 
     log_string("The number of training data is: %d" % len(train_dataset))
     log_string("The number of test data is: %d" % len(val_dataset))
@@ -170,7 +168,7 @@ def main():
     exce_counter = 0
 
     for epoch in range(max_epoch):
-        log_string('**** Epoch %d (%d/%s) ****' % (global_iter + 1, epoch + 1, max_epoch))
+        log_string('**** Epoch (%d/%s) ****' % (epoch + 1, max_epoch))
         train_loss = []
         loss_list = []
         hist_list = []
@@ -253,7 +251,12 @@ def main():
             gc.collect()
 
         # print("train----------", train_pa_acc / len(train_dataset_loader))# [acc1,acc2]
-        log_string('Training PA accuracy' , train_pa_acc / len(train_dataset_loader))
+        train_acc= train_pa_acc / len(train_dataset_loader)
+        log_string('Training PA accuracy' , (train_acc) )
+        tb_writer.add_scalars("PA_accuracy_car", {"training": train_acc[0]}, global_iter)
+        tb_writer.add_scalars("PA_accuracy_men", {"training": train_acc[1]}, global_iter)
+        del train_acc
+        gc.collect()
         log_string('Training mean loss: %f' % (np.mean(train_loss)))
 
         scheduler_lr.step()
@@ -326,13 +329,19 @@ def main():
                 del val_vox_label_1, val_grid_1, val_pt_fea_ten_0, val_grid_ten_0, val_point_label_tensor_1
                 del confusion_matrix
                 gc.collect()
-                torch.cuda.empty_cache()
-                torch.cuda.empty_cache()
-                torch.cuda.empty_cache()
-                torch.cuda.empty_cache()
-                torch.cuda.empty_cache()
 
+                val_acc = val_pa_acc / len(val_dataset_loader)
+                log_string('Validate PA car_accuracy',( val_acc[0]))
+                log_string('Validate PA men_accuracy', (val_acc[1]))
 
+                tb_writer.add_scalars("PA_accuracy_car", {"validate": val_acc[0]}, global_iter)
+                tb_writer.add_scalars("PA_accuracy_men", {"validate": val_acc[1]}, global_iter)
+
+                torch.cuda.empty_cache()
+                torch.cuda.empty_cache()
+                torch.cuda.empty_cache()
+                torch.cuda.empty_cache()
+                torch.cuda.empty_cache()
 
                 if best_val_miou < val_miou:
                     best_val_miou = val_miou
@@ -345,8 +354,6 @@ def main():
                 print('Current val miou is %.3f while the best val miou is %.3f' %  (val_miou, best_val_miou))
                 # print('Current val loss is %.3f' %  (np.mean(val_loss)))
                 log_string(' (np.mean(val_loss)): %f' %  (np.mean(val_loss)) )
-
-
 
 
 if __name__ == '__main__':

@@ -29,11 +29,11 @@ class PPmodel(nn.Module):
             nn.BatchNorm1d(128),
             nn.ReLU(inplace = True),
 
-            nn.Linear(128, 128, bias = False),
-            nn.BatchNorm1d(128),
+            nn.Linear(128, 256, bias = False),
+            nn.BatchNorm1d(256),
             nn.ReLU(inplace = True),
 
-            nn.Linear(128, out_pt_fea_dim, bias = False)
+            nn.Linear(256, out_pt_fea_dim, bias = False)
         )  #
         self.initialize()
 
@@ -296,7 +296,7 @@ class UNetEncoder(nn.Module):
     def __init__(self, n_height, dilation, group_conv, input_batch_norm, dropout, circular_padding, dropblock):
         super(UNetEncoder, self).__init__()
         # self.inc = inconv(n_height, 64, dilation, input_batch_norm, circular_padding)
-        self.down1 = down(64, 128, dilation, group_conv, circular_padding)
+        self.down1 = down(32, 128, dilation, group_conv, circular_padding)
         self.down2 = down(128, 256, dilation, group_conv, circular_padding)
         # self.down3 = down(256, 256, dilation, group_conv, circular_padding)
 
